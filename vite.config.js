@@ -4,5 +4,5 @@ import ghPages from 'vite-plugin-gh-pages';
 
 export default defineConfig({
   plugins: [svelte(), ghPages()],
-  base: '/<your-repo-name>/', // Replace with your repo name
+  base: '/svelte-about-me/', // Replace with your repo name
 });
