@@ -1,8 +1,8 @@
-import { defineConfig } from 'vite'
-import { svelte } from '@sveltejs/vite-plugin-svelte'
+import { defineConfig } from 'vite';
+import { svelte } from '@sveltejs/vite-plugin-svelte';
+import ghPages from 'vite-plugin-gh-pages';
 
-// https://vite.dev/config/
 export default defineConfig({
-  base: '/svelte-about-me/'
-  plugins: [svelte()],
-})
+  plugins: [svelte(), ghPages()],
+  base: '/<your-repo-name>/', // Replace with your repo name
+});
